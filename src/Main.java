@@ -138,9 +138,11 @@ public class Main {
                 led.low();
 
                 try {
-                    sendPOST("www.jp.dk");
+                    sendPOST("http://192.168.0.142:8123/api/webhook/metermeter");
                 }
-                catch (IOException ioe) {}
+                catch (IOException ioe) {
+
+                }
             }
         });
 
